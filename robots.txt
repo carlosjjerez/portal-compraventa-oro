@@ -1,4 +1,7 @@
+# DEMO: este despliegue no debe indexarse porque los datos de empresa,
+# el CIF y las resenas son ficticios. Al pasar al dominio real del cliente,
+# sustituir por "Allow: /" y quitar el meta robots de las paginas.
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://www.aureum.es/sitemap.xml
+Sitemap: https://carlosjjerez.github.io/portal-compraventa-oro/sitemap.xml

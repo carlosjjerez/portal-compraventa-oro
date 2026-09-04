@@ -45,8 +45,20 @@ Aparecen en las cuatro páginas y en el JSON-LD de `index.html`:
 - Número de WhatsApp: buscar `wa.me/34910000000`.
 - Horarios, en el bloque «Visítenos», en el pie y en `openingHoursSpecification`.
 - Coordenadas `geo` del JSON-LD y la dirección del mapa en `app.js`.
-- Dominio `https://www.aureum.es/` en `canonical`, Open Graph, `robots.txt` y
-  `sitemap.xml`.
+- **Dominio de despliegue.** Ahora apunta a
+  `https://carlosjjerez.github.io/portal-compraventa-oro`, que es donde vive
+  esta demo. Hay que sustituirlo por el dominio real en `canonical`, Open Graph,
+  el JSON-LD, `robots.txt` y `sitemap.xml`.
+
+### 1 bis. Pasar de demo a producción
+
+Esta demo está deliberadamente **fuera de los buscadores**, porque publica un
+CIF, una dirección y unas reseñas ficticias, y no conviene que eso acabe
+indexado como si fuera un negocio real. Para levantar el bloqueo:
+
+- Quitar la línea `<meta name="robots" content="noindex,nofollow" />` de las
+  cuatro páginas (está marcada con un comentario `DEMO:`).
+- En `robots.txt`, cambiar `Disallow: /` por `Allow: /`.
 
 ### 2. Contenido de ejemplo que hay que sustituir
 
