@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AUREUM | Contact &amp; Security</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#d4af37",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dbdad9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#4d4635",
+                        "on-secondary-container": "#636262",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-container": "#444546",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#b2b3b3",
+                        "on-primary-fixed": "#241a00",
+                        "surface-bright": "#fbf9f9",
+                        "surface-tint": "#735c00",
+                        "primary-fixed-dim": "#e9c349",
+                        "secondary": "#5f5e5e",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#ffe088",
+                        "surface-container-low": "#f5f3f3",
+                        "outline-variant": "#d0c5af",
+                        "background": "#fbf9f9",
+                        "secondary-container": "#e2dfde",
+                        "inverse-surface": "#303031",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#f2f0f0",
+                        "tertiary": "#5d5f5f",
+                        "inverse-primary": "#e9c349",
+                        "outline": "#7f7663",
+                        "surface-container": "#efeded",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-background": "#1b1c1c",
+                        "primary": "#735c00",
+                        "on-primary-container": "#554300",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-surface": "#1b1c1c",
+                        "error-container": "#ffdad6",
+                        "surface": "#fbf9f9",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-sm": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "price-display": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["EB Garamond"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "price-display": ["24px", { "lineHeight": "1", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #b3922c 100%);
+        }
+        .btn-primary {
+            @apply gold-gradient text-[#1a1c1c] font-label-caps text-label-caps px-6 py-3 rounded uppercase transition-transform hover:-translate-y-0.5 active:translate-y-0 shadow-[0_10px_20px_rgba(212,175,55,0.15)];
+        }
+        .input-line {
+            @apply w-full bg-transparent border-0 border-b border-[#1a1c1c] focus:ring-0 focus:border-[#d4af37] px-0 py-2 font-body-md text-on-surface transition-colors;
+        }
+        .input-label {
+            @apply font-label-caps text-label-caps text-on-surface-variant block mb-1 uppercase;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface w-full top-0 sticky z-50 border-b border-on-surface/10 dark:border-on-surface-variant/10">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+                AUREUM
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Buy Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Sell Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Real-time Prices</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">How it Works</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About Us</a>
+</div>
+<div class="hidden md:block">
+<button class="btn-primary">Start Selling</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Header -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-24 text-center">
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-6">Contact &amp; Security</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Secure your wealth with confidence. Request an appointment at our fortified facility or explore our internationally recognized security credentials.
+            </p>
+</section>
+<!-- Security Credentials Bento -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Badge 1 -->
+<div class="bg-surface-container-lowest border border-[#E0E0E0] p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[#d4af37] text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Comprador de Oro Autorizado</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Certified and regulated for absolute peace of mind in every transaction.</p>
+</div>
+<!-- Badge 2 -->
+<div class="bg-surface-container-lowest border border-[#E0E0E0] p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[#d4af37] text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">lock</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Seguridad SSL</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Military-grade encryption protecting all digital communications and asset transfers.</p>
+</div>
+<!-- Badge 3 -->
+<div class="bg-surface-container-lowest border border-[#E0E0E0] p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[#d4af37] text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Precios vinculados a la bolsa de Londres (LBMA)</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Transparent pricing anchored strictly to live global market standards.</p>
+</div>
+</div>
+</section>
+<!-- Form & Map Layout -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Contact Form -->
+<div>
+<h2 class="font-headline-md text-headline-md mb-8 relative inline-block">
+                        Request a Private Viewing
+                        <span class="absolute -bottom-2 left-0 w-12 h-1 bg-[#d4af37]"></span>
+</h2>
+<form class="space-y-8 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="input-label">First Name</label>
+<input class="input-line" placeholder="John" required="" type="text"/>
+</div>
+<div>
+<label class="input-label">Last Name</label>
+<input class="input-line" placeholder="Doe" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="input-label">Email Address</label>
+<input class="input-line" placeholder="john.doe@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="input-label">Phone Number</label>
+<input class="input-line" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+<div>
+<label class="input-label">Inquiry Type</label>
+<select class="input-line bg-transparent">
+<option>Asset Purchasing</option>
+<option>Liquidation</option>
+<option>Vault Storage</option>
+<option>General Inquiry</option>
+</select>
+</div>
+<button class="btn-primary w-full md:w-auto" type="submit">Submit Request</button>
+</form>
+</div>
+<!-- Map & Location Info -->
+<div class="flex flex-col h-full">
+<div class="bg-surface-container-lowest border border-[#E0E0E0] flex-grow flex flex-col relative overflow-hidden">
+<!-- Simulated Map Image -->
+<div class="h-64 lg:h-full w-full bg-cover bg-center" data-alt="A highly detailed overhead map view of a sophisticated, high-end financial district. The map style is minimalist and luxurious, using a palette of deep charcoal greys and off-whites, with striking, elegant gold accents highlighting a central, secure facility location. The aesthetic is clean, precise, and distinctly premium, conveying exclusivity and security." data-location="London" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3DlXGR9GbFvW7s9MgUvSmJpX-bAsqREvXX5gGUOrlrt7q_ulbdZUey638TMWeOVIqUYsh9cSFkGyrFdMhAYxviizlsUkiTz8SYvk-6u59NEtvQdhUcdsxAbIyd-B6B-XG5Fo-G3WIssYaHLAFGMNSJ1fEyTYVlxzKwmDhubS5jYEK7ZMPUgeRS03YoGDLQqycVml3W-RgsAXtO79RynpFX1-4wgLLMktgEoPZ99tN8CYbLs6A78RHgA')"></div>
+<!-- Overlay Info Card -->
+<div class="lg:absolute bottom-0 left-0 right-0 bg-surface-container-lowest/90 backdrop-blur-md border-t border-[#E0E0E0] p-8">
+<h3 class="font-headline-sm text-headline-sm mb-4">Aureum Vault &amp; Headquarters</h3>
+<div class="space-y-2 text-on-surface-variant font-body-md">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">location_on</span> 128 Financial District Blvd, Suite 400</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">mail</span> concierge@aureum.com</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">call</span> +44 20 7946 0958</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-surface-container-lowest border-y border-[#E0E0E0] py-24 mb-24">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-center mb-16">Client Discretion &amp; Trust</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="p-8 border border-surface-variant relative">
+<div class="absolute top-0 left-0 w-1 h-full bg-[#d4af37]"></div>
+<span class="material-symbols-outlined text-surface-variant text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface mb-6 italic">
+                            "The level of security and professionalism at Aureum is unmatched. Transacting significant volume requires absolute trust, and their LBMA-linked pricing and SSL integrations provide exactly that."
+                        </p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">— E.R., Institutional Investor</p>
+</div>
+<div class="p-8 border border-surface-variant relative">
+<div class="absolute top-0 left-0 w-1 h-full bg-[#d4af37]"></div>
+<span class="material-symbols-outlined text-surface-variant text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface mb-6 italic">
+                            "Visiting their authorized facility confirmed what their digital presence promised. A truly premium, discreet experience for serious asset management."
+                        </p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">— M.T., Private Collector</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-high w-full mt-auto border-t border-on-surface/5">
+<div class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed-dim mb-4">
+                    AUREUM
+                </div>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant max-w-xs">
+                    © 2024 Aureum Precious Metals. All rights reserved. Certified Gold Merchant.
+                </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-8 md:justify-end">
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Security &amp; Compliance</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Insurance Details</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

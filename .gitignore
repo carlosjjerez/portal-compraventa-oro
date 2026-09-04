@@ -1,0 +1,16 @@
+# Capturas antiguas del diseño previo (se conservan en local, no se publican)
+preview-aureum*.png
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Dependencias y temporales (por si más adelante se añade build)
+node_modules/
+dist/
+*.log

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AUREUM | Precious Metals</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-container": "#d4af37",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#dbdad9",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#4d4635",
+                      "on-secondary-container": "#636262",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "surface-container-high": "#e9e8e7",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#474746",
+                      "on-tertiary-container": "#444546",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-primary-fixed-variant": "#574500",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e4e2e2",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#b2b3b3",
+                      "on-primary-fixed": "#241a00",
+                      "surface-bright": "#fbf9f9",
+                      "surface-tint": "#735c00",
+                      "primary-fixed-dim": "#e9c349",
+                      "secondary": "#5f5e5e",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "primary-fixed": "#ffe088",
+                      "surface-container-low": "#f5f3f3",
+                      "outline-variant": "#d0c5af",
+                      "background": "#fbf9f9",
+                      "secondary-container": "#e2dfde",
+                      "inverse-surface": "#303031",
+                      "tertiary-fixed": "#e2e2e2",
+                      "inverse-on-surface": "#f2f0f0",
+                      "tertiary": "#5d5f5f",
+                      "inverse-primary": "#e9c349",
+                      "outline": "#7f7663",
+                      "surface-container": "#efeded",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-background": "#1b1c1c",
+                      "primary": "#735c00",
+                      "on-primary-container": "#554300",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-surface": "#1b1c1c",
+                      "error-container": "#ffdad6",
+                      "surface": "#fbf9f9",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#e4e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-sm": [
+                              "EB Garamond"
+                      ],
+                      "headline-md": [
+                              "EB Garamond"
+                      ],
+                      "price-display": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "EB Garamond"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "EB Garamond"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "price-display": [
+                              "24px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #b38b22 100%);
+        }
+        .btn-primary {
+            @apply gold-gradient-bg text-on-tertiary-fixed font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest transition-all duration-300;
+            box-shadow: 0px 10px 20px rgba(212, 175, 55, 0.15);
+        }
+        .btn-primary:hover {
+            box-shadow: 0px 12px 24px rgba(212, 175, 55, 0.25);
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            @apply bg-transparent border border-on-surface text-on-surface font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest transition-all duration-300;
+        }
+        .btn-secondary:hover {
+            @apply bg-surface-container-high;
+        }
+        .glass-nav {
+            @apply bg-surface/90 backdrop-blur-[10px];
+        }
+        .accent-bar {
+            @apply relative;
+        }
+        .accent-bar::before {
+            content: '';
+            @apply absolute left-0 top-0 bottom-0 w-1 bg-primary-container;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 glass-nav border-b border-on-surface/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md text-primary tracking-tight" href="#">
+                AUREUM
+            </a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 uppercase" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase" href="#">Buy Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase" href="#">Sell Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase" href="#">Real-time Prices</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase" href="#">How it Works</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase" href="#">About Us</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="btn-primary" href="#">Start Selling</a>
+</div>
+<!-- Mobile Menu Toggle (Placeholder) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40" data-alt="A highly detailed, cinematic photograph of stacked premium gold bars in a secure, well-lit modern vault. The lighting is soft and directional, highlighting the metallic luster and purity markings on the gold. The surrounding environment is minimalist and high-contrast, featuring subtle deep blacks and crisp whites, establishing a luxurious, authoritative, and secure light-mode aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRgAjpMxbyeSiWHYH3PELkzKIQ3d0b6KMiO0dv0TgCkhZo0f33Q1lShZHTjQk9PT0rpo4TR0w05DsPmIP6HxRhNYTqf2HJVyjjHV7M4KeYAlsPA4eEvqddvS7l7b3B73Gcpd4HMcLP_h5ULdlugIljNw3j_oC_rqi2-G6m1YBM0JMfC8bcsH0h_GuWD1tDfgevgFm4OjZQvv8btWFffdYLf-uEklpOtAENgULTWUTUqZRrd0yH7kV-_g')"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-6">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+                        Su Socio de Confianza en Metales Preciosos
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Compramos y vendemos oro con la máxima transparencia y el mejor precio del mercado.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="btn-primary text-center" href="#prices">Ver Cotizaciones en Vivo</a>
+<a class="btn-secondary text-center" href="#services">Nuestros Servicios</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-time Prices Section -->
+<section class="py-24 bg-surface-container-low" id="prices">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Cotizaciones en Tiempo Real</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Precios actualizados basados en el mercado internacional.</p>
+</div>
+<div class="mt-4 md:mt-0 flex items-center space-x-2 text-primary font-label-caps text-label-caps uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Live Market</span>
+</div>
+</div>
+<div class="bg-surface border border-on-surface/10 p-1 md:p-8 overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-on-surface/10">
+<th class="py-4 px-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Metal / Pureza</th>
+<th class="py-4 px-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-right">Compra (por gramo)</th>
+<th class="py-4 px-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-right">Venta (por gramo)</th>
+<th class="py-4 px-4 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-right">Tendencia</th>
+</tr>
+</thead>
+<tbody class="font-price-display text-price-display text-on-surface">
+<tr class="border-b border-on-surface/5 hover:bg-surface-container transition-colors">
+<td class="py-6 px-4">Oro 24k</td>
+<td class="py-6 px-4 text-right">€68.45</td>
+<td class="py-6 px-4 text-right">€71.20</td>
+<td class="py-6 px-4 text-right text-primary-container flex justify-end items-center">
+<span class="material-symbols-outlined mr-1 text-sm">trending_up</span> +0.4%
+                                </td>
+</tr>
+<tr class="border-b border-on-surface/5 hover:bg-surface-container transition-colors">
+<td class="py-6 px-4">Oro 22k</td>
+<td class="py-6 px-4 text-right">€62.70</td>
+<td class="py-6 px-4 text-right">€65.10</td>
+<td class="py-6 px-4 text-right text-primary-container flex justify-end items-center">
+<span class="material-symbols-outlined mr-1 text-sm">trending_up</span> +0.3%
+                                </td>
+</tr>
+<tr class="border-b border-on-surface/5 hover:bg-surface-container transition-colors">
+<td class="py-6 px-4">Oro 18k</td>
+<td class="py-6 px-4 text-right">€51.30</td>
+<td class="py-6 px-4 text-right">€53.40</td>
+<td class="py-6 px-4 text-right text-on-surface flex justify-end items-center">
+<span class="material-symbols-outlined mr-1 text-sm">trending_flat</span> 0.0%
+                                </td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-6 px-4">Plata Fina</td>
+<td class="py-6 px-4 text-right">€0.85</td>
+<td class="py-6 px-4 text-right">€0.95</td>
+<td class="py-6 px-4 text-right text-on-surface flex justify-end items-center">
+<span class="material-symbols-outlined mr-1 text-sm">trending_down</span> -0.1%
+                                </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-on-surface text-center mb-16">Nuestros Servicios</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="accent-bar bg-surface border border-on-surface/10 p-8 hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 0;">monetization_on</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Compra de Oro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Convertimos sus joyas, monedas y lingotes en liquidez inmediata con tasación precisa basada en el mercado actual.</p>
+<a class="font-label-caps text-label-caps text-on-surface uppercase border-b border-primary pb-1 hover:text-primary transition-colors" href="#">Conocer más</a>
+</div>
+<!-- Service 2 -->
+<div class="accent-bar bg-surface border border-on-surface/10 p-8 hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Venta de Lingotes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Invierta en oro físico certificado. Ofrecemos lingotes de diversas denominaciones con pureza garantizada (99.99%).</p>
+<a class="font-label-caps text-label-caps text-on-surface uppercase border-b border-primary pb-1 hover:text-primary transition-colors" href="#">Conocer más</a>
+</div>
+<!-- Service 3 -->
+<div class="accent-bar bg-surface border border-on-surface/10 p-8 hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 0;">scale</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Tasación Gratuita</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Nuestros expertos evalúan sus piezas de forma gratuita y sin compromiso utilizando tecnología avanzada y precisa.</p>
+<a class="font-label-caps text-label-caps text-on-surface uppercase border-b border-primary pb-1 hover:text-primary transition-colors" href="#">Conocer más</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Markers -->
+<section class="py-20 bg-surface-container border-y border-on-surface/5">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-on-surface/10">
+<div class="py-6 md:py-0 px-4 flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">bolt</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Pagos Instantáneos</h4>
+</div>
+<div class="py-6 md:py-0 px-4 flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">verified</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Tasación Profesional</h4>
+</div>
+<div class="py-6 md:py-0 px-4 flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">shield</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Seguridad Garantizada</h4>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-on-surface/5 w-full mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<a class="font-headline-sm text-headline-sm text-primary tracking-tight block mb-4" href="#">
+                    AUREUM
+                </a>
+<p class="font-body-md text-body-md text-on-secondary-container text-sm">
+                    © 2024 Aureum Precious Metals. All rights reserved. Certified Gold Merchant.
+                </p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-all underline decoration-1 uppercase" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-all underline decoration-1 uppercase" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-all underline decoration-1 uppercase" href="#">Security &amp; Compliance</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-all underline decoration-1 uppercase" href="#">Insurance Details</a>
+</div>
+<div class="flex flex-col space-y-4 col-span-2 md:col-span-1">
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-all underline decoration-1 uppercase" href="#">Contact Support</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

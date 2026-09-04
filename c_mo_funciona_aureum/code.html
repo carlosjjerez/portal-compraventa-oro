@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cómo funciona - AUREUM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "primary-container": "#d4af37",
+                            "on-tertiary": "#ffffff",
+                            "surface-dim": "#dbdad9",
+                            "surface-container-lowest": "#ffffff",
+                            "on-surface-variant": "#4d4635",
+                            "on-secondary-container": "#636262",
+                            "error": "#ba1a1a",
+                            "secondary-fixed-dim": "#c8c6c5",
+                            "surface-container-high": "#e9e8e7",
+                            "on-tertiary-fixed": "#1a1c1c",
+                            "on-primary": "#ffffff",
+                            "on-secondary-fixed-variant": "#474746",
+                            "on-tertiary-container": "#444546",
+                            "secondary-fixed": "#e5e2e1",
+                            "on-primary-fixed-variant": "#574500",
+                            "on-error-container": "#93000a",
+                            "surface-container-highest": "#e4e2e2",
+                            "on-secondary": "#ffffff",
+                            "tertiary-container": "#b2b3b3",
+                            "on-primary-fixed": "#241a00",
+                            "surface-bright": "#fbf9f9",
+                            "surface-tint": "#735c00",
+                            "primary-fixed-dim": "#e9c349",
+                            "secondary": "#5f5e5e",
+                            "tertiary-fixed-dim": "#c6c6c7",
+                            "primary-fixed": "#ffe088",
+                            "surface-container-low": "#f5f3f3",
+                            "outline-variant": "#d0c5af",
+                            "background": "#fbf9f9",
+                            "secondary-container": "#e2dfde",
+                            "inverse-surface": "#303031",
+                            "tertiary-fixed": "#e2e2e2",
+                            "inverse-on-surface": "#f2f0f0",
+                            "tertiary": "#5d5f5f",
+                            "inverse-primary": "#e9c349",
+                            "outline": "#7f7663",
+                            "surface-container": "#efeded",
+                            "on-secondary-fixed": "#1c1b1b",
+                            "on-background": "#1b1c1c",
+                            "primary": "#735c00",
+                            "on-primary-container": "#554300",
+                            "on-tertiary-fixed-variant": "#454747",
+                            "on-surface": "#1b1c1c",
+                            "error-container": "#ffdad6",
+                            "surface": "#fbf9f9",
+                            "on-error": "#ffffff",
+                            "surface-variant": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "margin-mobile": "20px",
+                            "margin-desktop": "64px",
+                            "container-max": "1280px",
+                            "gutter": "24px",
+                            "unit": "8px"
+                    },
+                    "fontFamily": {
+                            "label-caps": [
+                                    "Hanken Grotesk"
+                            ],
+                            "headline-sm": [
+                                    "EB Garamond"
+                            ],
+                            "headline-md": [
+                                    "EB Garamond"
+                            ],
+                            "price-display": [
+                                    "Hanken Grotesk"
+                            ],
+                            "display-lg-mobile": [
+                                    "EB Garamond"
+                            ],
+                            "body-lg": [
+                                    "Hanken Grotesk"
+                            ],
+                            "display-lg": [
+                                    "EB Garamond"
+                            ],
+                            "body-md": [
+                                    "Hanken Grotesk"
+                            ]
+                    },
+                    "fontSize": {
+                            "label-caps": [
+                                    "12px",
+                                    {
+                                            "lineHeight": "1",
+                                            "letterSpacing": "0.1em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-sm": [
+                                    "24px",
+                                    {
+                                            "lineHeight": "1.4",
+                                            "fontWeight": "500"
+                                    }
+                            ],
+                            "headline-md": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "1.3",
+                                            "fontWeight": "500"
+                                    }
+                            ],
+                            "price-display": [
+                                    "24px",
+                                    {
+                                            "lineHeight": "1",
+                                            "letterSpacing": "-0.01em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "display-lg-mobile": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "letterSpacing": "-0.01em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "display-lg": [
+                                    "48px",
+                                    {
+                                            "lineHeight": "1.1",
+                                            "letterSpacing": "-0.02em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "body-md": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ]
+                    }
+            },
+                },
+        }
+    </script>
+<style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #a67c00 100%);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #a67c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary-shadow {
+            box-shadow: 0px 10px 20px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface w-full top-0 sticky z-50 border-b border-on-surface/10 dark:border-on-surface-variant/10 flat no shadows">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+                AUREUM
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Buy Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Sell Gold</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Real-time Prices</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 opacity-80 transition-all duration-200" href="#">How it Works</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About Us</a>
+</div>
+<button class="hidden md:block gold-gradient text-on-tertiary font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT btn-primary-shadow hover:opacity-90 transition-opacity">
+                Start Selling
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Hero Section -->
+<section class="text-center mb-24">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6">
+                ¿Cómo vender su oro?
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Un proceso transparente, seguro y diseñado para maximizar el valor de sus activos preciosos. Descubra nuestra metodología paso a paso.
+            </p>
+</section>
+<!-- Steps Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-unit mb-24">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 p-8 rounded-lg relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="mb-4">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Paso 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Tasación</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Traiga sus piezas a nuestras oficinas o solicite un kit de envío asegurado. Garantizamos la máxima discreción y seguridad desde el primer momento.
+                </p>
+<div class="mt-8 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 0;">storefront</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 p-8 rounded-lg relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="mb-4">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Paso 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Valoración</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Expertos certificados analizan la pureza y el peso en su presencia. Utilizamos tecnología de espectrometría de última generación no destructiva.
+                </p>
+<div class="mt-8 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 0;">science</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 p-8 rounded-lg relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="mb-4">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Paso 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Oferta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Reciba una oferta competitiva basada en el precio del mercado en tiempo real. Sin compromisos ni presiones.
+                </p>
+<div class="mt-8 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 0;">monitoring</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 p-8 rounded-lg relative overflow-hidden group bg-surface-container-low">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="mb-4">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Paso 04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Pago</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Pago inmediato por transferencia bancaria o efectivo según normativa. Proceso transparente documentado formalmente.
+                </p>
+<div class="mt-8 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 0;">account_balance</span>
+</div>
+</div>
+</section>
+<!-- Image Section -->
+<section class="mb-24">
+<div class="w-full h-96 md:h-[500px] rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A high-end, minimalist photograph of a certified gemologist examining a gold ingot using specialized magnifying tools. The setting is a pristine, modern office with dark charcoal accents and soft, diffused natural lighting. The mood is highly professional, secure, and luxurious, emphasizing the physical reality and significant value of precious metals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA00rTJHIJh0QikHpxijKm_lpfRDfoCjNf2CWxrn_Nfu8vKOlfZVghGNTRnJ8R1xspF-DLAml1sz70UqOO5xC1-z1WoskGr4rCNDzP6T0328a_Rrvfb1F0PFxC0yJVlu_KYwI_eLq98A0Ea3EVAkvz6eUM5ArKz8bNEHHb3GTBlV2CW4Ksmx5yv-fNk622ZF53v3yBQtd6vcFtPBp0-OhxbEmWbnRdSlngylNB3qDODoA84kiB6TA4z7Q"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-12 text-center">Preguntas Frecuentes</h2>
+<div class="space-y-6">
+<!-- FAQ Item 1 -->
+<div class="border-b border-on-surface/10 pb-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center justify-between cursor-pointer">
+<span>¿Qué impuestos aplican a la venta de oro?</span>
+<span class="material-symbols-outlined text-primary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        En la mayoría de las jurisdicciones, la venta de oro de inversión (lingotes y monedas reconocidas) está exenta de IVA. Sin embargo, las ganancias de capital obtenidas en la venta pueden estar sujetas a tributación en su declaración de la renta. Recomendamos consultar con su asesor fiscal.
+                    </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-b border-on-surface/10 pb-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center justify-between cursor-pointer">
+<span>¿Cómo garantizan la seguridad durante el envío?</span>
+<span class="material-symbols-outlined text-primary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Nuestro kit de envío incluye embalaje a prueba de manipulaciones y un seguro a todo riesgo que cubre el valor estimado de sus piezas desde el momento en que son depositadas en el servicio de mensajería asociado hasta su llegada a nuestra bóveda.
+                    </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border-b border-on-surface/10 pb-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center justify-between cursor-pointer">
+<span>¿Debo identificarme para vender?</span>
+<span class="material-symbols-outlined text-primary">add</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Sí, por normativa vigente de prevención de blanqueo de capitales, es obligatorio presentar un documento de identidad oficial y en vigor (DNI, Pasaporte o NIE) para realizar cualquier transacción de venta de metales preciosos.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-high w-full mt-auto border-t border-on-surface/5 flat no shadows">
+<div class="max-w-container-max mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed-dim mb-6">AUREUM</h3>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant">
+                    © 2024 Aureum Precious Metals. All rights reserved. Certified Gold Merchant.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary-container mb-4">Legal</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary-container mb-4">Trust</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Security &amp; Compliance</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Insurance Details</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary-container mb-4">Support</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all underline decoration-1" href="#">Contact Support</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
