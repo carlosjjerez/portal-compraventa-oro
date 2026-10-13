@@ -14,3 +14,6 @@ Desktop.ini
 node_modules/
 dist/
 *.log
+
+# Recursos de marketing generados en local (capturas para la web de DigiNet)
+docs/marketing/
