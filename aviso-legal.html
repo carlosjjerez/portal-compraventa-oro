@@ -2,43 +2,46 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Aviso legal | AUREUM</title>
     <meta name="description" content="Aviso legal y condiciones de uso del sitio web de AUREUM, establecimiento de compraventa de oro y metales preciosos en Madrid." />
     <!-- DEMO: quitar esta linea al desplegar en el dominio real del cliente. -->
     <meta name="robots" content="noindex,nofollow" />
     <link rel="canonical" href="https://carlosjjerez.github.io/portal-compraventa-oro/aviso-legal.html" />
-    <meta name="theme-color" content="#242422" />
+    <meta name="theme-color" content="#121211" />
     <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preload" href="assets/fonts/eb-garamond.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <svg class="sprite" aria-hidden="true" focusable="false"><defs><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15.5M14 6.5l5.5 5.5-5.5 5.5"/></symbol></defs></svg>
 
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Aureum, inicio">AUREUM<span>®</span></a>
-      <nav class="desktop-nav" aria-label="Navegación principal">
-        <a href="index.html#vender">Vender oro</a>
-        <a href="index.html#comprar">Comprar oro</a>
-        <a href="index.html#proceso">Cómo funciona</a>
-        <a href="index.html#contacto">Contacto</a>
-      </nav>
-      <div class="header-actions">
-        <a class="button button--gold header-cta" href="index.html#vender">Solicitar tasación</a>
+    <header class="site-header is-scrolled">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="AUREUM, ir al inicio">AUREUM<sup>®</sup></a>
+        <nav class="nav" aria-label="Principal">
+          <a href="index.html#vender">Vender oro</a>
+          <a href="index.html#comprar">Comprar oro</a>
+          <a href="index.html#proceso">Cómo funciona</a>
+          <a href="index.html#seguridad">Garantías</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a class="button button--gold button--sm header-cta" href="index.html#vender">Tasar mi oro</a>
+        </div>
       </div>
     </header>
 
     <main class="legal-main" id="contenido">
       <div class="container">
-        <a class="legal-back" href="index.html"><span aria-hidden="true">←</span> Volver al inicio</a>
+        <a class="legal-back" href="index.html"><svg class="icon"><use href="#i-arrow-right"/></svg>Volver al inicio</a>
         <p class="eyebrow">Información legal</p>
         <h1>Aviso legal</h1>
-        <p class="legal-updated">Última actualización: 4 de septiembre de 2026</p>
+        <p class="legal-updated">Última actualización: 13 de octubre de 2026</p>
 
         <h2>1. Titular del sitio web</h2>
         <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos identificativos del titular de este sitio web:</p>
@@ -98,14 +101,20 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container footer-grid">
-        <div><a class="brand" href="index.html">AUREUM<span>®</span></a><p>Oro físico. Decisiones claras.</p></div>
-        <div><p class="footer-title">Visítenos</p><p>Calle de Serrano, 48<br />28001 Madrid</p><p>L–V 10–14 h · 17–20 h<br />S 10–14 h</p></div>
-        <div><p class="footer-title">Contacto</p><a href="tel:+34910000000">+34 910 000 000</a><a href="mailto:hola@aureum.es">hola@aureum.es</a><a href="https://wa.me/34910000000" target="_blank" rel="noopener">WhatsApp</a></div>
-        <div><p class="footer-title">Legal</p><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a></div>
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand"><a class="brand" href="index.html">AUREUM<sup>®</sup></a><p>Oro físico. Decisiones claras.</p></div>
+        <div><p class="footer__title">Visítenos</p><p>Calle de Serrano, 48<br />28001 Madrid</p><p>L–V 10–14 h · 17–20 h<br />S 10–14 h</p></div>
+        <div><p class="footer__title">Contacto</p><a href="tel:+34910000000">+34 910 000 000</a><a href="mailto:hola@aureum.es">hola@aureum.es</a><a href="https://wa.me/34910000000" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div><p class="footer__title">Legal</p><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a></div>
       </div>
-      <div class="container footer-bottom"><span>© 2026 AUREUM S.L. · CIF B00000000 · Todos los derechos reservados.</span><span>Establecimiento inscrito conforme a la normativa de metales preciosos.</span></div>
+      <div class="container footer__bottom"><span>© 2026 AUREUM S.L. · CIF B00000000</span><span>Establecimiento inscrito conforme a la normativa de metales preciosos.</span></div>
+      <div class="credit">
+        <div class="container credit__inner">
+          <p><span class="credit__tag">Demo</span>AUREUM es una marca ficticia. Web diseñada y desarrollada por <a href="https://diginetsoftware.es/?utm_source=demo-aureum&amp;utm_medium=referral&amp;utm_campaign=web-oro" target="_blank" rel="noopener">DigiNet Software</a>, creadores de ORONET.</p>
+          <a class="credit__cta" href="https://diginetsoftware.es/?utm_source=demo-aureum&amp;utm_medium=referral&amp;utm_campaign=web-oro#demo" target="_blank" rel="noopener">¿Quiere una web así para su tienda? <svg class="icon icon--move"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
