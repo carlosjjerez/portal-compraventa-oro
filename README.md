@@ -7,7 +7,7 @@ ejemplo del servicio de diseño web de DigiNet para tiendas del sector.
 
 ![Página principal de AUREUM](docs/preview.jpg)
 
-**Demo en vivo:** <https://carlosjjerez.github.io/portal-compraventa-oro/>
+**Demo en vivo:** <https://demo.diginetsoftware.es/>
 
 ## Qué incluye
 
@@ -101,9 +101,10 @@ ficticios. Al desplegar en el dominio del cliente:
 - Quitar `<meta name="robots" content="noindex,nofollow" />` de las páginas,
   marcado con el comentario `DEMO:`.
 - En `robots.txt`, cambiar `Disallow: /` por `Allow: /`.
-- Cambiar la URL `https://carlosjjerez.github.io/portal-compraventa-oro/` por
+- Cambiar la URL `https://demo.diginetsoftware.es/` por
   el dominio real en `canonical`, Open Graph, JSON-LD y `sitemap.xml`.
-- En `404.html`, ajustar `<base href>` a la ruta del sitio (`/` en un dominio propio).
+- Cambiar el fichero `CNAME` por el dominio del cliente y revisar en `404.html`
+  que `<base href>` apunte a la raíz del sitio (`/`).
 - Sustituir el bloque de demo del pie por un crédito discreto («Diseño web:
   DigiNet Software») y retirar la píldora flotante (`#demoPill`).
 - Subir el número de versión `?v=` de `styles.css` y `app.js` en cada despliegue.

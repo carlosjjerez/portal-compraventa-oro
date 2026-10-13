@@ -4,4 +4,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://carlosjjerez.github.io/portal-compraventa-oro/sitemap.xml
+Sitemap: https://demo.diginetsoftware.es/sitemap.xml
